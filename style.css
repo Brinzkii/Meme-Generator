@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(212, 86, 86, 0.651);
+    color: white;
+}
+
+header {
+    font-size: 90px;
+    font-family: 'Creepster', cursive;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 50%;
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    border-radius: .15cm;
+}
+
+input.submit {
+    width: auto;
+    height: 35px;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    border-radius: .15cm;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+input.submit:hover {
+    background-color: rgba(43, 128, 167, 0.877);
+    color: white;
+    border-color: white;
+    transition: all .5s ease-in-out;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+div.gallery > div {
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    filter: drop-shadow(10px 10px 10px gray);
+    transition: all .5s ease-in-out;
+}
+
+div.topText, div.bottomText {
+    font: 2.25rem white;
+    text-shadow: 1px 1px 3px black;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.topText {
+    position: relative;
+    top: -20px;
+}
+
+.bottomText {
+    position: relative;
+    top: 218px;
+}
+
+button.remove {
+    position: relative;
+    top: 408px;
+    left: 173px;
+    width: auto;
+    height: auto;
+    background-color: rgba(180, 43, 43, 0.61);
+    font-family: 'Inter', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    border-radius: .15cm;
+    cursor: pointer;
+}
